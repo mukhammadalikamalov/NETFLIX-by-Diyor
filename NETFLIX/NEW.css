@@ -1,0 +1,131 @@
+.default {
+    background: rgb(0 0 0 / 40%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+img {
+    height: 110vh;
+}
+
+.container {
+    position: relative;
+    width: 110%;
+    height: 110vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.email-input {
+    width: 280px;
+    padding: 25px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(9, 9, 9);
+    color: azure;
+}
+
+.email-input:hover {
+    background-color: darkgrey;
+}
+
+
+.button {
+    padding: 24px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+    outline: 0;
+    font-size: 20px;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    width: 100%;
+}
+
+.overlay h2 {
+    font-size: 30px;
+}
+
+.overlay h3 {
+    font-size: 20px;
+}
+
+.logo {
+    width: 10%;
+}
+
+/* Additional CSS for header */
+header {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+    /* Ensures header is on top of other content */
+}
+
+#logo {
+    height: 35px;
+    /* Adjust height as needed */
+    margin-top: 15px;
+    margin-left: 30px;
+    /* Maintain aspect ratio */
+}
+
+.sign-up-button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 75%;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        /* Adjusted width for mobile devices */
+        height: auto;
+        /* Adjusted height for mobile devices */
+    }
+
+
+
+    .overlay {
+        top: 450px;
+        /* Center the overlay vertically */
+        left: 50%;
+        /* Center the overlay horizontally */
+        transform: translate(-50%, -50%);
+        width: 80%;
+        /* Adjusted width for better appearance on mobile devices */
+    }
+
+    .sign-up-button {
+        margin-left: 85%;
+        margin-top: -10%;
+        /* Adjusted margin for better placement on mobile devices */
+        transform: translateX(-50%);
+        /* Center the button horizontally */
+    }
+}
